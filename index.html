@@ -6,6 +6,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='css/reset.css'>
     <link rel='stylesheet' href='css/main.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+      <script src="js/app.js"></script>
   </head>
 
   <body>
@@ -22,11 +24,13 @@
 
     <aside class="list">
       <h3 class="list__title">Add grocery item</h3>
-        <ul class="list__text">
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
+        <input id="item"></input>
+        <button type="submit" id="add">+</button></br>
+        <ul id="list">
+          <li class="items"><div class="box"></div><span>Chicken</span><button class="delete" value="X"></li>
+          <li class="items"><div class="box"></div><span>Popcorn</span><button class="delete" value="X"></li>
+          <li class="items"><div class="box"></div><span>Bread</span><button class="delete" value="X"></li>
+          <li class="items"><div class="box"></div><span>Milk</span><button class="delete" value="X"></li>
         </ul>
     </aside>
 
