@@ -28,12 +28,5 @@ $(document).ready(function(){
 
 //cross off list items
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('Checked');});
-
-//sortable list items
-	$('#list').sortable({ axis: "y" });
 	
-//show delete button on mouse hover
-	$('#list').on('mouseenter', 'li', function(){$(this).children('.delete').toggleClass('show');});
-	$('#list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});
-
 });
